@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body{
+    background-color: #f7fafc;
+    
+}
+
+@theme {
+    --font-primary: "Inter", sans-serif ;
+}
+
+.gradient-text{
+  background: -webkit-linear-gradient(#1f9df4, #1fd9ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
