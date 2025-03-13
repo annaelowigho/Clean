@@ -7,12 +7,13 @@ const Nav = () => {
       <nav className="flex justify-between items-center px-5 md:px-[50px] lg:px-[100px] py-[10px] md:py-[30px]">
         <div className='flex items-center gap-5'>
           <IoMenuSharp className='md:hidden text-[30px] border-[2px] border-[#1fd9ba] rounded-md'/>
-          <img src="/assets/logo.png" alt="Logo" className="w-[65px] h-[60px]" />
+          <img src="/assets/logo.png" alt="Logo" className="w-[65px] h-[60px]" /> 
         </div>
 
         <ul className="md:flex items-center gap-10 text-[#0b111f] text-[16px] font-medium hidden">
           <li className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">Home</li>
           <li className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">Features</li>
+          <li className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">Services</li>
           <li className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">FAQs</li>
         </ul>
 

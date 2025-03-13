@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
+import ForCustomers from '../Components/ForCustomers';
 
 const Homepage = () => {
   return (
@@ -28,6 +29,7 @@ const Homepage = () => {
           <img src="/assets/hero-img.png" alt="Hero-image" className='rounded-[18px] '/>
         </div>
       </div>
+      <ForCustomers />
     </>
   )
 }
