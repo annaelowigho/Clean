@@ -10,7 +10,11 @@ body{
 }
 
 .gradient-text{
-  background: -webkit-linear-gradient(#1f9df4, #1fd9ba);
+  /* background: -webkit-linear-gradient(to-right, #1f9df4, #1fd9ba);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+
+  background: linear-gradient(100deg, #1f9df4, #1fd9ba);
+  -webkit-background-clip: text;
+  color: transparent;
 }
