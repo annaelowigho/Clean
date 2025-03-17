@@ -1,6 +1,10 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import ForCustomers from '../Components/ForCustomers';
+import ForLaundry from '../Components/ForLaundry';
+import Partners from '../Components/Partners';
+import HowItWorks from '../Components/HowItWorks';
+import Invest from '../Components/Invest';
 
 const Homepage = () => {
   return (
@@ -30,6 +34,23 @@ const Homepage = () => {
         </div>
       </div>
       <ForCustomers />
+      <ForLaundry />
+
+      {/* PARTNERS */}
+      <div className='bg-[#eff7fe] py-[50px]'>
+        <div className='px-5 md:px-[50px] lg:px-[100px]  flex flex-col items-center'>
+          <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
+            <span className='text-[#030816]'>Our</span> Trusted Partners
+          </h1>
+          <p className='pt-2 text-[15px] md:text-[20px] w-full md:w-[600px] text-[#69778f] text-center'>Clean makes your laundry experience hassle-free with these great features</p>
+        </div>
+        <div className=''>
+          <Partners />
+        </div>
+      </div>
+
+      <HowItWorks />
+      <Invest />
     </>
   )
 }
