@@ -90,7 +90,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className='text-white bg-black flex items-center p-2 rounded-md gap-1'>
-                  <img src="/google-play.svg" alt="" className='w-[25px] h-[25px]'/>
+                  <img src="/google-play-store-icon.svg" alt="" className='w-[25px] h-[25px]'/>
                   <div className=''>
                     <p className='text-[10px]'>GET IT ON</p>
                     <p className='text-[20px] leading-4'>Google Play</p>
