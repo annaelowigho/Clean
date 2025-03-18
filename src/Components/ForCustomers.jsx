@@ -3,6 +3,7 @@ import { MdAccessTime } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPayment } from "react-icons/md";
 import { LuShieldCheck } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 const Features = [
     {
@@ -30,7 +31,7 @@ const Features = [
 const ForCustomers = () => {
   return (
     <>
-        <div className='pb-[50px] md:pb-[100px]'>
+        <div id="users" className='pb-[50px] md:pb-[100px]'>
           <div className='px-5 md:px-[50px] lg:px-[100px] pt-[50px] md:pt-[100px] xl:pt-[150px] flex flex-col items-center'>
             <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
               For Customers

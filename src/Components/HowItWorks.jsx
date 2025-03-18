@@ -18,7 +18,7 @@ const HowItWorks = () => {
                     We collaborate with leading laundry services to provide you with the best experience
                 </p>
             </div>
-            <div className='pt-[50px] hidden flex-col md:flex-row gap-5 justify-center'>
+            <div className='pt-[50px] hidden md:flex flex-row gap-5 justify-center'>
                 <div className='flex flex-col gap-[28px] items-center'>
                     <div className='bg-white w-full md:w-[346px] lg:w-[432px] px-[24px] pb-[28px] rounded-2xl cursor-pointer shadow-2xl
                     hover:-translate-y-2 duration-300 '>

@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Footer from './layout/Footer'
 import Nav from './layout/Nav'
@@ -8,7 +9,11 @@ function App() {
   return (
     <>
       <Nav />
-      <Homepage />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   )

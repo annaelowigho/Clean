@@ -5,6 +5,7 @@ import ForLaundry from '../Components/ForLaundry';
 import Partners from '../Components/Partners';
 import HowItWorks from '../Components/HowItWorks';
 import Invest from '../Components/Invest';
+import { HashLink } from 'react-router-hash-link';
 
 const Homepage = () => {
   return (
@@ -44,7 +45,7 @@ const Homepage = () => {
           </h1>
           <p className='pt-2 text-[15px] md:text-[20px] w-full md:w-[600px] text-[#69778f] text-center'>Clean makes your laundry experience hassle-free with these great features</p>
         </div>
-        <div className=''>
+        <div className='px-5 md:px-[50px] xl:px-[200px] flex items-center pt-10'>
           <Partners />
         </div>
       </div>
