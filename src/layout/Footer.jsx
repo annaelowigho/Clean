@@ -21,15 +21,25 @@ const Footer = () => {
             </p>
             <div className='flex items-center gap-4'>
               <SlLocationPin className='text-[#1fd9ba] text-[25px]'/>
-              <p className='text-[20px] font-medium'>123 Laundry Street, Clean City</p>
+              <div>
+                <p className='text-[20px] font-medium hover:text-white cursor-pointer'>66 west Flagler Street Miami, FL 33130 USA.</p>
+                <p className='text-[20px] font-medium hover:text-white cursor-pointer'>No Layi Yusuf Lekki peninsula Lagos, Nigeria. </p>
+              </div>
             </div>
             <div className='flex items-center gap-4'>
               <BiEnvelope className='text-[#1fd9ba] text-[25px]'/>
-              <p className='text-[20px] font-medium hover:text-white cursor-pointer'>info@cleanlaundry.com</p>
+              <div>
+                <a href="mailto:info@useclean.com.ng">
+                  <p className='text-[20px] font-medium hover:text-white cursor-pointer'>info@useclean.com.ng</p>
+                </a>
+                <a href="mailto:Support@useclean.com.ng">
+                  <p className='text-[20px] font-medium hover:text-white cursor-pointer'>Support@useclean.com.ng</p>
+                </a>
+              </div>
             </div>
             <div className='flex items-center gap-4'>
               <FiPhone className='text-[#1fd9ba] text-[25px]'/>
-              <p className='text-[20px] font-medium hover:text-white cursor-pointer'>+1 (234) 567-890</p>
+              <p className='text-[20px] font-medium hover:text-white cursor-pointer'>(+234) 9039288629</p>
             </div>
           </div>  
           <div className='text-[#69778f] flex flex-col gap-3'>

@@ -31,7 +31,8 @@ const Features = [
 const ForLaundry = () => {
   return (
     <>
-        <div className='pb-[100px]'>
+      <section id="laundry-shops">
+        <div  className='pb-[100px]'>
           <div className='px-5 md:px-[50px] lg:px-[100px] flex flex-col items-center'>
             <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
               For Laundry Shops
@@ -54,6 +55,7 @@ const ForLaundry = () => {
             ))}
           </div>
         </div>
+      </section>
     </>
   )
 }

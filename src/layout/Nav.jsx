@@ -4,9 +4,9 @@ import { IoMenuSharp } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 
 const navLinks = [
-  { title: "Home", link: "#home" },
+  { title: "Home", link: "/" },
+  { title: "About", link: "/about-us" },
   { title: "FAQs", link: "#faqs" },
-  { title: "Services", link: "#services" },
 ];
 
 const Nav = () => {
@@ -50,29 +50,44 @@ const Nav = () => {
         ))}
 
         {/* Features Dropdown */}
-        <li className="relative">
-          <button
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]"
-          >
-            Features
-          </button>
+        <li
+      className="relative"
+      onMouseEnter={() => setIsDropdownOpen(true)}
+      onMouseLeave={() => setIsDropdownOpen(false)}
+    >
+      <button
+        className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]"
+      >
+        Features
+      </button>
 
-          {isDropdownOpen && (
-            <ul className="absolute left-0 mt-2 w-[150px] bg-white shadow-md border rounded-md p-2">
-              <li className="hover:bg-gray-200 p-2"><Link smooth to="#users">For Customers</Link></li>
-              <li className="hover:bg-gray-200 p-2"><Link smooth to="#laundry-shops">Laundry Shops</Link></li>
-              <li className="hover:bg-gray-200 p-2"><Link smooth to="#services">Services</Link></li>
-            </ul>
-          )}
-        </li>
+      {isDropdownOpen && (
+        <ul
+          className="absolute left-0 w-[200px] bg-white shadow-md rounded-md p-2"
+          onClick={() => setIsDropdownOpen(false)} // Close on click
+        >
+          <li className="hover:bg-gray-200 p-2">
+            <Link smooth to="#users">For Customers</Link>
+          </li>
+          <li className="hover:bg-gray-200 p-2">
+            <Link smooth to="#laundry-shops">Laundry Shops</Link>
+          </li>
+          <li className="hover:bg-gray-200 p-2">
+            <Link smooth to="#services">Services</Link>
+          </li>
+        </ul>
+      )}
+    </li>
       </ul>
 
       {/* CTA Button */}
       <div className="flex gap-5">
-        <button className="bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] px-5 py-3 rounded-lg text-[#f0f0f0] font-bold cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105">
-          Invest with Clean
-        </button>
+        <Link smooth to="#invest">
+          <button  className="bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] px-5 py-3 rounded-lg text-[#f0f0f0] font-bold cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105">
+            Invest with Clean
+          </button>
+        </Link>
+        
       </div>
 
       {/* Mobile Menu */}
@@ -81,7 +96,7 @@ const Nav = () => {
           {/* <button onClick={() => setIsMenuOpen(false)} className="self-end text-[30px]"><FaTimes 
           className="border-[2px] border-[#1fd9ba] rounded-md p-2 h-[40px] w-[40px]" /></button> */}
           {navLinks.map(({ title, link }) => (
-            <Link key={title} smooth to={link} className="text-[25px] font-medium">
+            <Link key={title} smooth to={link} className="text-[25px] font-medium" onClick={() => setIsMenuOpen(false)}>
               {title}
             </Link>
           ))}
@@ -89,10 +104,17 @@ const Nav = () => {
           <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="text-[25px] font-medium">Features</button>
           {isDropdownOpen && (
             <ul className="pl-4">
-              <li className="py-1"><Link smooth to="#users">For Customers</Link></li>
-              <li className="py-1"><Link smooth to="#laundry-shops">Laundry Shops</Link></li>
-              <li className="py-1"><Link smooth to="#services">Services</Link></li>
+              <li className="py-1">
+                <Link smooth to="#users" onClick={() => setIsMenuOpen(false)}>For Customers</Link>
+              </li>
+              <li className="py-1">
+                <Link smooth to="#laundry-shops" onClick={() => setIsMenuOpen(false)}>Laundry Shops</Link>
+              </li>
+              <li className="py-1">
+                <Link smooth to="#services" onClick={() => setIsMenuOpen(false)}>Services</Link>
+              </li>
             </ul>
+          
           )}
         </div>
       )}

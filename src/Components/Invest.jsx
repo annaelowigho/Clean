@@ -8,16 +8,17 @@ import { FiDollarSign } from "react-icons/fi";
 const Invest = () => {
   return (
     <>
-        <div className='flex flex-col items-center px-5'>
+        <section id="invest">
+            <div className='flex flex-col items-center px-5'>
             <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
               Invest in Clean
             </h1>
             <p className='pt-2 px-2 md:px-0 text-[15px] md:text-[20px] w-full md:w-[600px] text-[#69778f] text-center'>
                 Join us in revolutionizing the laundry industry. Invest in Clean and be part of our growth story.
             </p>
-        </div>
+            </div>
 
-        <div className='px-5 md:px-[50px] pb-[50px] pt-10 flex flex-col xl:px-[100px] xl:flex-row xl:justify-center xl:gap-10'>
+            <div className='px-5 md:px-[50px] pb-[50px] pt-10 flex flex-col xl:px-[100px] xl:flex-row xl:justify-center xl:gap-10'>
             <div className='flex flex-col xl:w-1/2'>
                 <div className='bg-white px-5 py-8  rounded-xl space-y-5 w-[350px] md:w-full xl:space-y-10'>
                     <div className='flex gap-2 items-start'>
@@ -116,7 +117,8 @@ const Invest = () => {
                     </div>
                 </form>
             </div>
-        </div>
+            </div>
+        </section>
     </>
   )
 }

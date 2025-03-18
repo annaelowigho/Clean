@@ -6,10 +6,10 @@ import { IoSearch } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
 
 
-const HowItWorks = () => {
+const HowItWorks = ({ setIsOpen }) => {
   return (
     <>
-        <div className='pt-[50px] md:pt-[80px] pb-[80px] md:pb-[100px] px-5 flex flex-col items-center'>
+        <div id="howItWorks" className='pt-[50px] md:pt-[80px] pb-[80px] md:pb-[100px] px-5 flex flex-col items-center'>
             <div className=''>
                 <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
                 How It Works
@@ -147,7 +147,8 @@ const HowItWorks = () => {
                 </div>
             </div>
             <div className="bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] px-5 py-3 mt-14 md:mt-20 rounded-lg text-[#f0f0f0] font-bold cursor-pointer 
-                hover:shadow-xl transition-transform-y duration-300 hover:scale-102 flex items-center justify-center w-[200px] gap-4">
+                hover:shadow-xl transition-transform-y duration-300 hover:scale-102 flex items-center justify-center w-[200px] gap-4"
+                onClick={() => setIsOpen(true)}>
                 <button >
                     Get Started 
                 </button>
