@@ -58,10 +58,10 @@ const AboutUs = () => {
                 <p className='pt-2 text-[15px] md:text-[20px] w-full md:w-[800px] text-[#69778f] text-center'>
                     Meet the dedicated professionals behind our seamless laundry and dry cleaning services.
                 </p>
-                <div className='flex flex-col md:flex-row items-center justify-center gap-5'>
+                <div className='flex flex-col md:flex-row items-center justify-center gap-5 pt-10'>
                     {Team.map((Team, index) => (
                         <div key={index} className="relative w-full group cursor-pointer">
-                            <img src={Team.image} alt="" className='w-[300px] h-[350px]'/>
+                            <img src={Team.image} alt="" className='w-[300px] h-[350px] object-cover rounded-md'/>
                             <div className='absolute text-center bottom-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-4 
                             transition-all duration-500 ease-in-out text-black bg-[#d7ebfa] group-hover:p-3'>
                                 <h3 className='text-[25px]'>{Team.title}</h3>
