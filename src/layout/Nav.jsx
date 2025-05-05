@@ -7,6 +7,7 @@ const navLinks = [
   // { title: "Home", link: "/" },
   { title: "About", link: "/about-us" },
   { title: "FAQs", link: "/faqs" },
+  {title: "Features", link: "/features"}
 ];
 
 const Nav = () => {
@@ -51,7 +52,7 @@ const Nav = () => {
           </li>
         ))}
 
-        <li className="relative" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
+        {/* <li className="relative" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
           <button className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">
             Features
           </button>
@@ -71,7 +72,7 @@ const Nav = () => {
               </li>
             </ul>
           )}
-        </li>
+        </li> */}
       </ul>
 
       {/* CTA Button */}
