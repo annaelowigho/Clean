@@ -4,9 +4,9 @@ import { IoMenuSharp } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 
 const navLinks = [
-  { title: "Home", link: "/" },
+  // { title: "Home", link: "/" },
   { title: "About", link: "/about-us" },
-  { title: "FAQs", link: "#faqs" },
+  { title: "FAQs", link: "/faqs" },
 ];
 
 const Nav = () => {
@@ -38,7 +38,9 @@ const Nav = () => {
         >
           {isMenuOpen ? <FaTimes /> : <IoMenuSharp />}
         </button>
-        <img src="/assets/logo.png" alt="Logo" className="w-[65px] h-[60px]" />
+        <Link to='/'>
+          <img src="/assets/logo.png" alt="Logo" className="w-[65px] h-[60px]" />
+        </Link>
       </div>
 
       {/* Desktop Nav */}
@@ -49,35 +51,27 @@ const Nav = () => {
           </li>
         ))}
 
-        {/* Features Dropdown */}
-        <li
-      className="relative"
-      onMouseEnter={() => setIsDropdownOpen(true)}
-      onMouseLeave={() => setIsDropdownOpen(false)}
-    >
-      <button
-        className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]"
-      >
-        Features
-      </button>
-
-      {isDropdownOpen && (
-        <ul
-          className="absolute left-0 w-[200px] bg-white shadow-md rounded-md p-2"
-          onClick={() => setIsDropdownOpen(false)} // Close on click
-        >
-          <li className="hover:bg-gray-200 p-2">
-            <Link smooth to="#users">For Customers</Link>
-          </li>
-          <li className="hover:bg-gray-200 p-2">
-            <Link smooth to="#laundry-shops">Laundry Shops</Link>
-          </li>
-          <li className="hover:bg-gray-200 p-2">
-            <Link smooth to="#services">Services</Link>
-          </li>
-        </ul>
-      )}
-    </li>
+        <li className="relative" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
+          <button className="cursor-pointer hover:text-[#1f9df4] hover:border-[#1fd9ba] hover:border-b-[2px]">
+            Features
+          </button>
+          {isDropdownOpen && (
+            <ul
+              className="absolute left-0 w-[200px] bg-white shadow-md rounded-md p-2"
+              onClick={() => setIsDropdownOpen(false)} // Close on click
+            >
+              <li className="hover:bg-gray-200 p-2">
+                <Link smooth to="#users">For Customers</Link>
+              </li>
+              <li className="hover:bg-gray-200 p-2">
+                <Link smooth to="#laundry-shops">Laundry Shops</Link>
+              </li>
+              <li className="hover:bg-gray-200 p-2">
+                <Link smooth to="#services">Services</Link>
+              </li>
+            </ul>
+          )}
+        </li>
       </ul>
 
       {/* CTA Button */}
@@ -87,7 +81,6 @@ const Nav = () => {
             Invest with Clean
           </button>
         </Link>
-        
       </div>
 
       {/* Mobile Menu */}

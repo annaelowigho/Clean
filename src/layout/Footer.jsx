@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { SlLocationPin } from "react-icons/sl";
 import { BiEnvelope } from "react-icons/bi";
 import { FiPhone } from "react-icons/fi";
@@ -44,10 +45,10 @@ const Footer = () => {
           </div>  
           <div className='text-[#69778f] flex flex-col gap-3'>
             <h3 className='text-[25px] font-bold text-white pb-4 xl:pb-6'>Quick Links</h3>
-            <p className='text-[20px] font-medium cursor-pointer hover:text-white'>Home</p>
+            <Link to='/about-us'><p className='text-[20px] font-medium cursor-pointer hover:text-white'>About Us</p></Link>
             <p className='text-[20px] font-medium cursor-pointer hover:text-white'>Features</p>
             <p className='text-[20px] font-medium cursor-pointer hover:text-white'>Services</p>
-            <p className='text-[20px] font-medium cursor-pointer hover:text-white'>FAQs</p>
+            <Link to='/faqs'><p className='text-[20px] font-medium cursor-pointer hover:text-white'>FAQs</p></Link>
             <p className='text-[20px] font-medium cursor-pointer hover:text-white'>Blogs</p>
           </div>  
           <div className='text-[#69778f] flex flex-col gap-3'>

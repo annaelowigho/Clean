@@ -15,9 +15,9 @@ const Homepage = () => {
 
   return (
     <>
-      <div  className='px-5 md:px-[50px] lg:px-[100px] py-[30px] md:py-[30px] flex flex-col lg:flex-row items-center gap-10 lg:gap-0'>
+      <div  className='custom px-5 md:px-[50px] lg:px-[60px] min-[1300px]:px-[100px] py-[30px] md:py-[30px] flex flex-col lg:flex-row items-center gap-10 lg:gap-0'>
         <div id='/' className='w-full lg:w-1/2 flex flex-col justify-center'>
-          <h1 className='text-[60px] md:text-[70px] font-bold w-full md:w-[700px] leading-[60px] md:leading-[75px]'>
+          <h1 className='text-[60px] md:text-[65px] font-bold w-full md:w-[700px] leading-[60px] md:leading-[75px]'>
             Clean: <span className='text-[#1f9df4]'>Effortless </span> <span className='text-[#1fd9ba]'>Laundry,</span> Anytime <span className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] bg-clip-text text-transparent'>Anywhere</span>
           </h1>
           <p className='pt-6 text-[20px] w-full md:w-[500px] text-[#69778f]'>

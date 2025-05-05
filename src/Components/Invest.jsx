@@ -4,6 +4,8 @@ import { FiCheckCircle } from "react-icons/fi";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { GoPeople } from "react-icons/go";
 import { FiDollarSign } from "react-icons/fi";
+import { FaYoutube } from "react-icons/fa";
+
 
 const Invest = () => {
   return (
@@ -20,8 +22,8 @@ const Invest = () => {
 
             <div className='px-5 md:px-[50px] pb-[50px] pt-10 flex flex-col xl:px-[100px] xl:flex-row xl:justify-center xl:gap-10'>
             <div className='flex flex-col xl:w-1/2'>
-                <div className='bg-white px-5 py-8  rounded-xl space-y-5 w-[350px] md:w-full xl:space-y-10'>
-                    <div className='flex gap-2 items-start'>
+                <div className='bg-[#ED3237] rounded-xl w-full flex items-center justify-center h-[300px] md:h-[350px]'>
+                    {/* <div className='flex gap-2 items-start'>
                         <GiCheckMark className='text-[#1f9df4] text-[22px] mt-1'/>
                         <p className='text-[18px] font-medium'>Disrupting the $100B laundry services market</p> 
                     </div>
@@ -40,6 +42,11 @@ const Invest = () => {
                     <div className='flex gap-2 items-start'>
                         <GiCheckMark className='text-[#1f9df4] text-[22px] mt-1'/>
                         <p className='text-[18px] font-medium'>Technology-first approach to a traditional industry</p> 
+                    </div> */}
+                    <div className='relative'>
+                        <img src="/assets/testimonial.png" alt="" className=''/>
+                        <img src="/assets/play-icon.svg" alt="" className='absolute w-[50px] h-[50px] top-[50px] left-[40px] bottom-0 right-0'/>
+                        {/* <FaYoutube className='absolute top-[50px] text-white bottom-0 right-0 left-[40px] text-[50px]'/> */}
                     </div>
                 </div>
                 <div className='pt-[30px] xl:pt-[50px]'>
@@ -80,7 +87,7 @@ const Invest = () => {
             <div className='mt-[50px] bg-white py-10 rounded-2xl shadow-xl px-5 xl:mt-0 xl:w-1/2 xl:py-5'>
                 <div className='flex flex-col items-center'>
                     <h3 className='text-[30px] font-bold w-[200px] text-center md:w-full leading-[40px]'>Interested in Investing</h3>
-                    <p className='pt-3  text-[15px] md:text-[20px] w-full md:w-[600px] text-[#69778f] text-center pb-10 xl:pb-5'>
+                    <p className='pt-3 text-[15px] md:text-[20px] w-full md:w-[600px] xl:w-full text-[#69778f] text-center pb-10 xl:pb-5'>
                         Fill out the form below and our investment team will get back to you.
                     </p>
                 </div>

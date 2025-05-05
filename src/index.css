@@ -9,6 +9,19 @@ body{
     --font-primary: "Inter", sans-serif ;
 }
 
+@media (min-width: 1300px) {
+  .custom {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 1500px) {
+  .custom {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
 .gradient-text{
   /* background: -webkit-linear-gradient(to-right, #1f9df4, #1fd9ba);
   -webkit-background-clip: text;
