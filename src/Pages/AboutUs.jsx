@@ -32,22 +32,28 @@ const Testimonials = [
         comment: "I was skeptical at first, but Clean has completely transformed my laundry routine. No more stress, no more stains—just fresh, perfectly cleaned clothes delivered right to my door!"
     },
     {
+        image: "/man-testimonial.webp",
+        name: "David K..",
+        user: "Laundry Shop",
+        comment: "I was skeptical at first, but Clean has completely transformed my laundry routine. No more stress, no more stains—just fresh, perfectly cleaned clothes delivered right to my door!"
+    },
+    {
         image: "/testimonial-one.jpg",
         name: "Amanda L.",
         user: "Customer",
         comment: "Top-notch quality and customer service! My delicate fabrics are handled with so much care, and everything always smells incredible. Worth every penny!"
-    },
-    {
-        image: "/man-testimonial.webp",
-        name: "Michael B.",
-        user: "Laundry Shop",
-        comment: "Laundry day? I don’t even think about it anymore! Thanks to Clean, my weekends are mine again. Reliable, professional, and always on time—highly recommend!"
     },
 ]
 
 const AboutUs = () => {
   return (
     <>
+        <div className="relative w-full h-[400px] bg-[url(/washing-mach.jpg)] bg-center bg-cover bg-no-repeat 
+        px-[20px] py-[30px] md:px-[70px] md:py-[50px] xl:px-[200px] xl:py-[100px]">           
+            <div className="absolute top-0 left-0 w-full h-full bg-[#d6f8f3] z-10 opacity-60 flex items-center justify-center">
+                {/* <h1 className="text-xl font-bold">Laundry Services</h1> */}
+            </div>
+        </div>
         <div className='pt-[30px] md:pt-[50px]'>
             <div className='px-5 md:px-[50px] lg:px-[100px] flex flex-col items-center'>
                 <h1 className='bg-gradient-to-r from-[#1f9df4] to-[#1fd9ba] text-center bg-clip-text text-transparent text-[30px] md:text-[50px] font-bold'>
@@ -94,6 +100,9 @@ const AboutUs = () => {
                                 <h3 className='text-[25px]'>{Team.title}</h3>
                                 <p className='text-[15px]'>{Team.description}</p>
                             </div>
+                            <div className=''>
+
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -109,7 +118,7 @@ const AboutUs = () => {
                     clothes delivered on time, their words say it all. See why we’re the trusted choice for exceptional laundry and 
                     dry-cleaning services! 
                 </p>
-                <div className='flex flex-col md:flex-row items-center justify-center gap-5 pt-10'>
+                <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-5 pt-10'>
                     {Testimonials.map((Testimonials, index) => (
                         <div key={index} className='bg-white py-8 px-5 w-[320px] h-[400px] rounded-xl hover:bg-[#d6f8f3]'>
                             <div className='flex gap-5 items-center'>

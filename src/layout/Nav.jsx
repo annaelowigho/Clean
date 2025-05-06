@@ -12,7 +12,7 @@ const navLinks = [
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Handle scroll effect
@@ -86,15 +86,19 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed top-[80px] right-0 w-[100%] h-[70%] bg-[#d6f8f3]/90 shadow-lg p-5 flex flex-col items-start gap-6 md:hidden z-50">
+        <div className="fixed top-[80px] right-0 w-[100%] h-[50%] bg-[#d6f8f3]/90 shadow-lg p-5 flex flex-col items-start 
+        gap-6 md:hidden z-50">
           {/* <button onClick={() => setIsMenuOpen(false)} className="self-end text-[30px]"><FaTimes 
           className="border-[2px] border-[#1fd9ba] rounded-md p-2 h-[40px] w-[40px]" /></button> */}
           {navLinks.map(({ title, link }) => (
-            <Link key={title} smooth to={link} className="text-[25px] font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link key={title} smooth to={link} className="text-[20px] font-medium" onClick={() => setIsMenuOpen(false)}>
               {title}
             </Link>
           ))}
-          {/* Features Dropdown in Mobile */}
+        </div>
+      )}
+
+          {/* Features Dropdown in Mobile
           <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="text-[25px] font-medium">Features</button>
           {isDropdownOpen && (
             <ul className="pl-4">
@@ -109,9 +113,7 @@ const Nav = () => {
               </li>
             </ul>
           
-          )}
-        </div>
-      )}
+          )} */}
     </header>
   );
 };

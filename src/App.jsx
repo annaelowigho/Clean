@@ -6,15 +6,14 @@ import Homepage from './Pages/Homepage'
 import AboutUs from './Pages/AboutUs'
 import FAQs from './Pages/FAQs'
 import Features from './Pages/Features'
+import ScrollToTop from './layout/ScrollToTop'
 
 function App() {
 
   return (
     <>
       <Nav />
-      {/* <Router>
-        
-      </Router> */}
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about-us' element={<AboutUs />} />
