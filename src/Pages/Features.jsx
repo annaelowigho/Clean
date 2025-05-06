@@ -9,6 +9,7 @@ const Features = () => {
                 <h1 className="text-xl font-bold">Laundry Services</h1>
             </div>
         </div>
+        
     </>
   )
 }
