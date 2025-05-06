@@ -39,7 +39,8 @@ const ForCustomers = () => {
             <p className='pt-2 text-[15px] md:text-[20px] w-full md:w-[600px] text-[#69778f] text-center'>Clean makes your laundry experience hassle-free with these great features</p>
           </div>
 
-          <div className='flex flex-col md:flex-row flex-wrap justify-center items-center pt-[30px] lg:pt-[64px] gap-[20px] md:gap-[32px] px-5 md:px-0'>
+          <div className='flex flex-col md:flex-row flex-wrap justify-center items-center pt-[30px] lg:pt-[64px] gap-[20px] 
+          md:gap-[32px] px-5 md:px-0'>
             {Features.map((Features, index) => (
               <div key={index} className='w-full md:w-[350px] xl:w-[310px] h-[248px] bg-white rounded-xl flex flex-col items-center 
               justify-center p-4 cursor-pointer hover:-translate-y-2 duration-300 hover:shadow-xl'>
